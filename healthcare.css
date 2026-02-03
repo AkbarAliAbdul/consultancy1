@@ -1,0 +1,436 @@
+/* Healthcare Page Specific Styles */
+
+/* Healthcare Hero Section */
+.healthcare-hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+.healthcare-hero .container {
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.healthcare-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+    animation: fadeUp 1s ease-out;
+}
+
+.healthcare-hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    animation: fadeUp 1.2s ease-out;
+}
+
+.healthcare-hero .hero-buttons {
+    animation: fadeUp 1.4s ease-out;
+}
+
+/* Healthcare Overview */
+.healthcare-overview {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.overview-text h2 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.overview-text h2:after {
+    left: 0;
+    transform: translateX(0);
+}
+
+.healthcare-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.healthcare-stat {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.healthcare-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.healthcare-stat h3 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.healthcare-stat p {
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: 0;
+}
+
+.overview-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* Healthcare Programs */
+.healthcare-programs {
+    padding: 80px 0;
+    background-color: #f5f7fa;
+}
+
+.healthcare-programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.healthcare-program-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.healthcare-program-card:hover {
+    transform: translateY(-10px);
+}
+
+.healthcare-program-card .program-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.healthcare-program-card h3 {
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+
+.healthcare-program-card > p {
+    margin-bottom: 20px;
+    color: var(--gray);
+}
+
+.healthcare-program-card ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.healthcare-program-card li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.healthcare-program-card li:last-child {
+    border-bottom: none;
+}
+
+.healthcare-program-card li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success);
+    font-weight: bold;
+}
+
+/* Healthcare Impact */
+.healthcare-impact {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.impact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.impact-stories h3 {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.impact-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    align-items: center;
+    text-align: justify;
+}
+
+
+
+
+.story-image img {
+    width: 90%;
+    border-radius: 20px;
+    height: 300px;
+    
+}
+
+.story-text h4 {
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.story-meta {
+    font-style: italic;
+    color: var(--gray);
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.impact-numbers h3 {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.number-item {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.number-item:hover {
+    background: var(--secondary);
+    transform: translateY(-5px);
+}
+
+.number-item h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.number-item p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Get Involved */
+.get-involved {
+    padding: 80px 0;
+    background-color: #f5f7fa;
+}
+
+.involvement-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.involvement-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.involvement-card:hover {
+    transform: translateY(-10px);
+}
+
+.involvement-card i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.involvement-card h3 {
+    margin-bottom: 15px;
+}
+
+.involvement-card p {
+    margin-bottom: 20px;
+    color: var(--gray);
+}
+
+.involvement-card .btn {
+    margin-top: 10px;
+}
+
+.upcoming-events {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.upcoming-events h3 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.event:hover {
+    background: #e9ecef;
+}
+
+.event-date {
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 70px;
+}
+
+.event-date .day {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.event-date .month {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.event-details h4 {
+    margin-bottom: 5px;
+    color: var(--secondary);
+}
+
+.event-details p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.event-details i {
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+/* Footer Healthcare Resources */
+.footer-links .active {
+    color: #ff66b2 !important;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .overview-content,
+    .impact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .healthcare-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .impact-story,
+    .impact-story:nth-child(even) {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+    
+    .impact-story:nth-child(even) .story-text {
+        direction: ltr;
+    }
+}
+
+@media (max-width: 768px) {
+    .healthcare-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .healthcare-hero p {
+        font-size: 1rem;
+    }
+    
+    .healthcare-programs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .healthcare-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .numbers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .involvement-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .healthcare-hero {
+        height: 60vh;
+    }
+    
+    .healthcare-hero h1 {
+        font-size: 1.8rem;
+    }
+}
